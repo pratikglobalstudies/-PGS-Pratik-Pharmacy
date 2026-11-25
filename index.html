@@ -3,394 +3,719 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PGS Government Exam Preparation | Pratik Global Studies</title>
-<meta name="description" content="Railway, SSC, UP Government and Pharmacy competitive exam study material, mock tests and video lectures by PGS.">
+<title>PGS Pharmacy Education | Pratik Global Studies</title>
+<meta name="description" content="B.Pharm and D.Pharm study material, mock tests and video lectures by PGS.">
+
 <style>
 :root{
-  --blue:#0d47a1;--blue2:#1976d2;--dark:#0d1b2a;
-  --yellow:#ffeb3b;--green:#128c45;--purple:#673ab7;--bg:#f3f6fb;
+--blue:#0d47a1;
+--blue2:#1976d2;
+--dark:#0d1b2a;
+--yellow:#ffeb3b;
+--green:#128c45;
+--purple:#673ab7;
+--bg:#f3f6fb;
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Arial,sans-serif;background:var(--bg);color:#222;line-height:1.6}
-header{background:var(--blue);color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+
+header{
+background:var(--blue);color:white;padding:18px 6%;
+display:flex;justify-content:space-between;align-items:center;
+gap:12px;flex-wrap:wrap
+}
 header h1{font-size:25px}
 header p{color:var(--yellow);font-size:13px;font-weight:bold}
-nav{background:var(--dark);padding:13px 5%;display:flex;justify-content:center;gap:22px;flex-wrap:wrap}
+
+nav{
+background:var(--dark);padding:13px 5%;
+display:flex;justify-content:center;gap:22px;flex-wrap:wrap
+}
 nav a{color:white;text-decoration:none;font-size:14px;font-weight:bold}
 nav a:hover{color:var(--yellow)}
-.hero{background:linear-gradient(120deg,var(--dark),var(--blue2));color:white;text-align:center;padding:65px 15px}
+
+.hero{
+background:linear-gradient(120deg,var(--dark),var(--blue2));
+color:white;text-align:center;padding:65px 15px
+}
 .hero h2{font-size:34px;color:var(--yellow);margin-bottom:10px}
 .hero p{max-width:700px;margin:auto}
 .tag{display:inline-block;margin-top:18px;border:1px solid white;border-radius:25px;padding:7px 17px}
+
 section{padding:45px 6%;scroll-margin-top:15px}
 .section-title{text-align:center;color:var(--blue);font-size:28px;margin-bottom:10px}
 .section-sub{text-align:center;color:#555;max-width:750px;margin:0 auto 28px}
+
 .about{background:white;text-align:center}
 .about p{max-width:850px;margin:auto}
-.course-home{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;max-width:1100px;margin:auto}
-.home-card{background:white;border-radius:15px;padding:30px 20px;text-align:center;box-shadow:0 5px 18px #00000012;border-top:6px solid var(--blue2)}
-.home-card.ssc{border-top-color:var(--purple)}
-.home-card.up{border-top-color:var(--green)}
-.home-card.pharmacy{border-top-color:#d97706}
-.home-card h3{font-size:25px;color:var(--blue);margin-bottom:8px}
-.home-card.ssc h3{color:var(--purple)}
-.home-card.up h3{color:var(--green)}
-.home-card.pharmacy h3{color:#b45309}
+
+/* COURSE HOME CARDS */
+
+.course-home{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px;max-width:900px;margin:auto
+}
+
+.home-card{
+background:white;border-radius:15px;padding:30px 20px;
+text-align:center;box-shadow:0 5px 18px #00000012;
+border-top:6px solid var(--blue2)
+}
+.home-card.dpharm{border-top-color:var(--green)}
+.home-card h3{font-size:29px;color:var(--blue);margin-bottom:8px}
+.home-card.dpharm h3{color:var(--green)}
 .home-card p{color:#555;margin-bottom:18px}
-.main-btn{display:inline-block;text-decoration:none;border:0;background:var(--blue2);color:white;padding:12px 22px;border-radius:7px;font-weight:bold;cursor:pointer}
-.ssc .main-btn{background:var(--purple)}.up .main-btn{background:var(--green)}.pharmacy .main-btn{background:#b45309}
+
+.main-btn{
+display:inline-block;text-decoration:none;border:0;
+background:var(--blue2);color:white;padding:12px 22px;
+border-radius:7px;font-weight:bold;cursor:pointer
+}
+.dpharm .main-btn{background:var(--green)}
+
+/* SEMESTER / YEAR SELECTOR */
+
 .course-section{background:white;margin-top:20px}
-.course-section.ssc-section{background:#f5f0ff}
-.course-section.up-section{background:#eaf7ef}
-.course-section.pharmacy-section{background:#fff7ed}
-.selector-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin:25px 0 35px}
-.selector{display:block;text-align:center;text-decoration:none;background:var(--blue);color:white;padding:15px 8px;border-radius:9px;font-weight:bold;transition:.2s}
-.ssc-section .selector{background:var(--purple)}
-.up-section .selector{background:var(--green)}
-.pharmacy-section .selector{background:#b45309}
+.course-section.diploma{background:#eaf1fc}
+
+.selector-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+gap:12px;margin:25px 0 35px
+}
+
+.selector{
+display:block;text-align:center;text-decoration:none;
+background:var(--blue);color:white;padding:15px 8px;
+border-radius:9px;font-weight:bold;transition:.2s
+}
+.diploma .selector{background:var(--green)}
 .selector:hover{transform:translateY(-3px);filter:brightness(1.1)}
 .selector small{display:block;font-weight:normal;font-size:12px}
+
+/* SUBJECT CARDS */
+
 .semester-block{margin-bottom:42px;scroll-margin-top:20px}
-.semester-title{background:var(--dark);color:white;padding:13px 17px;border-radius:8px;margin-bottom:17px;font-size:20px}
-.subject-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:17px}
-.subject-card{background:white;padding:19px;border-radius:11px;box-shadow:0 4px 13px #00000010;border-left:4px solid var(--blue2)}
+
+.semester-title{
+background:var(--dark);color:white;
+padding:13px 17px;border-radius:8px;margin-bottom:17px;
+font-size:20px
+}
+
+.subject-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:17px
+}
+
+.subject-card{
+background:white;padding:19px;border-radius:11px;
+box-shadow:0 4px 13px #00000010;
+border-left:4px solid var(--blue2)
+}
+
 .subject-code{color:var(--green);font-size:13px;font-weight:bold}
 .subject-card h3{color:var(--blue);font-size:16px;margin:8px 0 14px;min-height:48px}
-.resource-btn{display:block;width:100%;border:0;border-radius:6px;padding:11px;margin-top:9px;color:white;font-weight:bold;cursor:pointer;font-size:13px}
-.study{background:var(--blue2)}.video{background:var(--purple)}
-.enquiry{display:block;text-align:center;text-decoration:none;background:var(--green);color:white;padding:10px;border-radius:6px;margin-top:9px;font-size:13px;font-weight:bold}
+
+.resource-btn{
+display:block;width:100%;border:0;border-radius:6px;
+padding:11px;margin-top:9px;color:white;
+font-weight:bold;cursor:pointer;font-size:13px
+}
+.study{background:var(--blue2)}
+.video{background:var(--purple)}
+
+.enquiry{
+display:block;text-align:center;text-decoration:none;
+background:var(--green);color:white;padding:10px;
+border-radius:6px;margin-top:9px;font-size:13px;font-weight:bold
+}
+
 .resource-btn:hover,.enquiry:hover,.main-btn:hover{filter:brightness(.9)}
+
 .features{background:white}
-.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.feature-grid{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px
+}
 .feature{background:var(--bg);padding:20px;border-radius:10px;text-align:center}
 .feature h3{color:var(--blue);margin-bottom:5px}
+
 .contact{text-align:center;background:#eaf1fc}
 .contact a{color:var(--blue);font-weight:bold;text-decoration:none}
+
 footer{background:var(--dark);color:white;text-align:center;padding:25px}
 footer strong{color:var(--yellow)}
+
 @media(max-width:600px){
- header{justify-content:center;text-align:center}nav{gap:12px}nav a{font-size:12px}
- .hero h2{font-size:26px}.section-title{font-size:24px}
- section{padding:35px 5%}.subject-grid{grid-template-columns:1fr}
+header{justify-content:center;text-align:center}
+nav{gap:12px}
+nav a{font-size:12px}
+.hero h2{font-size:26px}
+.section-title{font-size:24px}
+section{padding:35px 5%}
+.subject-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <div>
-    <h1>PRATIK GLOBAL STUDIES</h1>
-    <p>PGS | GOVERNMENT EXAM PREPARATION</p>
-  </div>
-  <strong>Learn • Practice • Succeed</strong>
+<div>
+<h1>PRATIK GLOBAL STUDIES</h1>
+<p>PGS | PHARMACY EDUCATION</p>
+</div>
+<strong>Learn • Understand • Grow</strong>
 </header>
 
 <nav>
-  <a href="#home">Home</a><a href="#about">About</a><a href="#exams">Exams</a>
-  <a href="#railway">Railway</a><a href="#ssc">SSC</a><a href="#up">UP Exams</a>
-  <a href="#pharmacy">Pharmacy</a><a href="#features">Features</a><a href="#contact">Contact</a>
+<a href="../">PGS Main Home</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#features">Features</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <div class="hero" id="home">
-  <h2>PGS Government Exam Preparation</h2>
-  <p>One Learning Platform for Railway, SSC, UP Government and Pharmacy Competitive Examinations – Study Material, PYQ, Mock Tests and Video Lectures.</p>
-  <span class="tag">Railway • SSC • UP Government • Pharmacy</span>
+<h2>PGS Pharmacy Education</h2>
+<p>Complete Pharmacy Learning Platform – Study Material, Mock Tests, MCQ and Video Lectures.</p>
+<span class="tag">B.Pharm & D.Pharm | New Learning Portal</span>
 </div>
 
 <section class="about" id="about">
-  <h2 class="section-title">Welcome to Pratik Global Studies</h2>
-  <p>Pratik Global Studies provides exam-wise and subject-wise study material, previous year questions, online mock tests and video lectures. Select your examination and prepare step by step with PGS.</p>
+<h2 class="section-title">Welcome to PGS Pharmacy</h2>
+<p>
+Pratik Global Studies provides B.Pharm and D.Pharm students
+with subject-wise study material, online video lectures,
+mock tests and examination preparation resources.
+Learn every subject in a simple and student-friendly way.
+</p>
 </section>
 
-<section id="exams">
-  <h2 class="section-title">Choose Your Examination</h2>
-  <p class="section-sub">Select a sector to explore its examinations and subjects.</p>
-  <div class="course-home">
-    <div class="home-card"><h3>Railway Exams</h3><p>RRB NTPC, Group D, ALP and Technician</p><a href="#railway" class="main-btn">Explore Railway →</a></div>
-    <div class="home-card ssc"><h3>SSC Exams</h3><p>SSC CGL, CHSL, MTS and GD</p><a href="#ssc" class="main-btn">Explore SSC →</a></div>
-    <div class="home-card up"><h3>UP Government</h3><p>PET, RO/ARO, Police and Lekhpal</p><a href="#up" class="main-btn">Explore UP Exams →</a></div>
-    <div class="home-card pharmacy"><h3>Pharmacy Exams</h3><p>Drug Inspector and Pharmacist</p><a href="#pharmacy" class="main-btn">Explore Pharmacy →</a></div>
-  </div>
+<!-- MAIN COURSE SELECTION -->
+
+<section id="courses">
+
+<h2 class="section-title">Our Pharmacy Courses</h2>
+<p class="section-sub">Select your course to explore semester-wise and year-wise subjects.</p>
+
+<div class="course-home">
+
+<div class="home-card">
+<h3>B.Pharm</h3>
+<p>Bachelor of Pharmacy<br>2026 New Syllabus<br>1st to 8th Semester</p>
+<a href="#bpharm" class="main-btn">Explore B.Pharm →</a>
+</div>
+
+<div class="home-card dpharm">
+<h3>D.Pharm</h3>
+<p>Diploma in Pharmacy<br>ER-2020 Syllabus<br>1st & 2nd Year</p>
+<a href="#dpharm" class="main-btn">Explore D.Pharm →</a>
+</div>
+
+</div>
 </section>
 
-<section class="course-section" id="railway">
-  <h2 class="section-title">Railway Examinations</h2>
-  <p class="section-sub">Choose an examination to view its subjects.</p>
-  <div class="selector-grid" id="railwaySelector"></div>
-  <div id="railwaySubjects"></div>
+<!-- B PHARM -->
+
+<section class="course-section" id="bpharm">
+
+<h2 class="section-title">B.Pharm – Complete Syllabus</h2>
+<p class="section-sub">2026 New Syllabus | Select your semester below.</p>
+
+<div class="selector-grid" id="bpharmSelector"></div>
+
+<div id="bpharmSubjects"></div>
+
 </section>
 
-<section class="course-section ssc-section" id="ssc">
-  <h2 class="section-title">SSC Examinations</h2>
-  <p class="section-sub">Choose an examination to view its subjects.</p>
-  <div class="selector-grid" id="sscSelector"></div>
-  <div id="sscSubjects"></div>
+<!-- D PHARM -->
+
+<section class="course-section diploma" id="dpharm">
+
+<h2 class="section-title">D.Pharm – Complete Syllabus</h2>
+<p class="section-sub">ER-2020 Syllabus | Select your year below.</p>
+
+<div class="selector-grid" id="dpharmSelector"></div>
+
+<div id="dpharmSubjects"></div>
+
 </section>
 
-<section class="course-section up-section" id="up">
-  <h2 class="section-title">UP Government Examinations</h2>
-  <p class="section-sub">Choose an examination to view its subjects.</p>
-  <div class="selector-grid" id="upSelector"></div>
-  <div id="upSubjects"></div>
-</section>
-
-<section class="course-section pharmacy-section" id="pharmacy">
-  <h2 class="section-title">Pharmacy Government Examinations</h2>
-  <p class="section-sub">Choose an examination to view its subjects.</p>
-  <div class="selector-grid" id="pharmacySelector"></div>
-  <div id="pharmacySubjects"></div>
-</section>
-
-<section id="common">
-  <h2 class="section-title">Common Study Material</h2>
-  <p class="section-sub">Common subjects useful across multiple competitive examinations.</p>
-  <div class="selector-grid" id="commonSelector"></div>
-</section>
+<!-- FEATURES -->
 
 <section class="features" id="features">
-  <h2 class="section-title">Why Study with PGS?</h2>
-  <div class="feature-grid">
-    <div class="feature"><h3>Study Material + Mock Test</h3><p>Notes, PDFs, MCQs and practice tests.</p></div>
-    <div class="feature"><h3>Previous Year Questions</h3><p>Exam-wise PYQ practice resources.</p></div>
-    <div class="feature"><h3>Video Lectures</h3><p>Subject-wise recorded classes and lessons.</p></div>
-    <div class="feature"><h3>WhatsApp Support</h3><p>Direct enquiry for study resources.</p></div>
-  </div>
+
+<h2 class="section-title">Why Study with PGS?</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h3>Study Material + MCQ</h3>
+<p>PDF Notes, Blogger Resources and Mock Tests.</p>
+</div>
+
+<div class="feature">
+<h3>Video Lectures</h3>
+<p>Subject-wise recorded classes and video resources.</p>
+</div>
+
+<div class="feature">
+<h3>Exam Preparation</h3>
+<p>Semester-wise learning and revision support.</p>
+</div>
+
+<div class="feature">
+<h3>WhatsApp Support</h3>
+<p>Direct enquiry for courses and study material.</p>
+</div>
+
+</div>
 </section>
 
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
-  <h2 class="section-title">Contact PGS</h2>
-  <p>For study material, classes and enquiries</p>
-  <p><strong>WhatsApp:</strong> <a href="https://wa.me/919653063675" target="_blank">+91 9653063675</a></p>
-  <a class="enquiry" style="max-width:260px;margin:15px auto" href="https://wa.me/919653063675?text=Hello%20PGS%2C%20I%20want%20exam%20preparation%20information." target="_blank">WhatsApp Enquiry</a>
-  <p>YouTube: <a href="https://www.youtube.com/@pratikglobalstudies" target="_blank">Pratik Global Studies</a></p>
+
+<h2 class="section-title">Contact PGS</h2>
+<p>For B.Pharm and D.Pharm course enquiries</p>
+
+<p>
+<strong>WhatsApp:</strong>
+<a href="https://wa.me/919653063675" target="_blank">
++91 9653063675
+</a>
+</p>
+
+<a class="enquiry"
+href="https://wa.me/919653063675?text=Hello%20PGS%2C%20I%20want%20course%20information."
+target="_blank">
+WhatsApp Enquiry
+</a>
+
+<p style="margin-top:15px">
+YouTube:
+<a href="https://www.youtube.com/@pratikglobalstudies" target="_blank">
+Pratik Global Studies
+</a>
+</p>
+
 </section>
 
 <footer>
-  <strong>PRATIK GLOBAL STUDIES – PGS</strong>
-  <p>Government Exam Preparation | Railway • SSC • UP • Pharmacy</p>
-  <p>© 2026 PGS. All Rights Reserved.</p>
+<strong>PRATIK GLOBAL STUDIES – PGS</strong>
+<p>Pharmacy Education | B.Pharm & D.Pharm</p>
+<p>© 2026 PGS. All Rights Reserved.</p>
 </footer>
 
 <script>
-/* =========================================
+
+/* =================================
    PGS PASSWORD SETTINGS
-   Study Material + Mock Test share password.
-   Video Lectures use a separate password.
-   IMPORTANT: Front-end passwords are not secure.
-   ========================================= */
+================================= */
+
+// Study Material + Mock Test: SAME PASSWORD
+// Video Lectures: SEPARATE PASSWORD
+
 const PASSWORDS = {
-  study: "12345",
-  video: "12345"
+study: "12345",
+video: "12345"
 };
+
 const whatsappNumber = "919653063675";
 
-/* =========================================
-   EXAM SUBJECTS
-   These are broad preparation subjects.
-   Check each recruitment notification for
-   its exact syllabus and exam pattern.
-   ========================================= */
-const exams = {
-  railway: [
-    {title:"RRB NTPC", subjects:[
-      ["RNTPC-GA","General Awareness"],["RNTPC-MATH","Mathematics"],["RNTPC-REAS","General Intelligence & Reasoning"],["RNTPC-SCI","General Science"],["RNTPC-PYQ","Previous Year Questions"]
-    ]},
-    {title:"RRB Group D", subjects:[
-      ["RGD-MATH","Mathematics"],["RGD-REAS","General Intelligence & Reasoning"],["RGD-SCI","General Science"],["RGD-GA","General Awareness & Current Affairs"],["RGD-PYQ","Previous Year Questions"]
-    ]},
-    {title:"RRB ALP", subjects:[
-      ["RALP-MATH","Mathematics"],["RALP-REAS","Reasoning"],["RALP-SCI","General Science"],["RALP-GA","General Awareness"],["RALP-TECH","Basic Science & Engineering"]
-    ]},
-    {title:"RRB Technician", subjects:[
-      ["RT-MATH","Mathematics"],["RT-REAS","Reasoning"],["RT-SCI","General Science"],["RT-GA","General Awareness"],["RT-TECH","Technical Subject"]
-    ]}
-  ],
-  ssc: [
-    {title:"SSC CGL", subjects:[
-      ["CGL-REAS","General Intelligence & Reasoning"],["CGL-GA","General Awareness"],["CGL-QUANT","Quantitative Aptitude"],["CGL-ENG","English Comprehension"],["CGL-PYQ","Previous Year Questions"]
-    ]},
-    {title:"SSC CHSL", subjects:[
-      ["CHSL-REAS","Reasoning"],["CHSL-GA","General Awareness"],["CHSL-MATH","Quantitative Aptitude"],["CHSL-ENG","English Language"],["CHSL-PYQ","Previous Year Questions"]
-    ]},
-    {title:"SSC MTS", subjects:[
-      ["MTS-REAS","Reasoning"],["MTS-GA","General Awareness"],["MTS-MATH","Numerical Ability"],["MTS-ENG","English Language"]
-    ]},
-    {title:"SSC GD", subjects:[
-      ["GD-REAS","Reasoning"],["GD-GA","General Knowledge & Awareness"],["GD-MATH","Elementary Mathematics"],["GD-ENG","English / Hindi"]
-    ]}
-  ],
-  up: [
-    {title:"UPSSSC PET", subjects:[
-      ["PET-HIST","Indian History"],["PET-GEO","Geography"],["PET-POL","Indian Constitution & Polity"],["PET-SCI","General Science"],["PET-MATH","Elementary Mathematics"],["PET-REAS","Reasoning"],["PET-HINDI","General Hindi"],["PET-CA","Current Affairs"]
-    ]},
-    {title:"UPPSC RO/ARO", subjects:[
-      ["RO-HINDI","General Hindi"],["RO-GA","General Studies"],["RO-PYQ","Previous Year Questions"]
-    ]},
-    {title:"UP Police", subjects:[
-      ["POL-GK","General Knowledge"],["POL-HINDI","General Hindi"],["POL-MATH","Numerical & Mental Ability"],["POL-REAS","Mental Aptitude, IQ & Reasoning"]
-    ]},
-    {title:"UP Lekhpal", subjects:[
-      ["LEK-GK","General Knowledge"],["LEK-HINDI","General Hindi"],["LEK-MATH","Mathematics"],["LEK-RURAL","Rural Development & Society"]
-    ]}
-  ],
-  pharmacy: [
-    {title:"Drug Inspector", subjects:[
-      ["DI-PHARM","Pharmaceutics"],["DI-PHARMACOL","Pharmacology"],["DI-CHEM","Pharmaceutical Chemistry"],["DI-LAW","Pharmacy Law & Jurisprudence"],["DI-QA","Quality Assurance"]
-    ]},
-    {title:"Government Pharmacist", subjects:[
-      ["PHARM-1","Pharmaceutics"],["PHARM-2","Pharmaceutical Chemistry"],["PHARM-3","Pharmacology"],["PHARM-4","Pharmacognosy"],["PHARM-5","Hospital & Clinical Pharmacy"]
-    ]},
-    {title:"Hospital Pharmacist", subjects:[
-      ["HOSP-1","Pharmacy Practice"],["HOSP-2","Pharmacology"],["HOSP-3","Pharmaceutics"],["HOSP-4","Pharmacy Law"]
-    ]}
-  ]
-};
 
-/* =========================================
+/* =================================
+   B.PHARM 2026 SYLLABUS
+================================= */
+
+const bpharm = [
+
+{
+title:"1st Semester",
+subjects:[
+["BP101T","Basics of Python Programming for Pharmaceutical Sciences"],
+["BP102T","General Pharmacy"],
+["BP103T","Healthcare Psychology and Communication Skills"],
+["BP104T","Human Anatomy, Physiology and Pathophysiology I"],
+["BP105T","Introduction to Pharmacognosy"],
+["BP106T","Pharmaceutical Inorganic and Analytical Chemistry"]
+]
+},
+
+{
+title:"2nd Semester",
+subjects:[
+["RP201T","Applied Biostatistics and Data Analytics for Pharmaceutical Sciences"],
+["BP202T","Biochemistry"],
+["BP203T","Human Anatomy, Physiology and Pathophysiology II"],
+["BP204T","Pharmaceutical Organic Chemistry"],
+["BP205T","Pharmacognosy and Phytochemistry"],
+["BP206T","Physical Pharmaceutics"]
+]
+},
+
+{
+title:"3rd Semester",
+subjects:[
+["BP301T","Introduction to Machine Learning in Pharmaceutical Sciences"],
+["BP302T","Environmental Sciences"],
+["BP303T","Ethics and Universal Human Values"],
+["BP304T","General Pharmacology"],
+["BP305T","Heterocyclic Compounds and Stereochemistry"],
+["BP306T","Pharmaceutical Dosage Forms I"],
+["BP307T","Pharmaceutical Engineering"],
+["RP308T","Pharmaceutical Microbiology"]
+]
+},
+
+{
+title:"4th Semester",
+subjects:[
+["BP401T","Herbal Drug Technology"],
+["BP402T","Medicinal Chemistry"],
+["BP403T","Pharmaceutical Biotechnology"],
+["BP404T","Social Pharmacy and Public Health"],
+["BP405T","Systemic Pharmacology I"]
+]
+},
+
+{
+title:"5th Semester",
+subjects:[
+["BP501T","Biomedical Chemistry"],
+["BP502T","Industrial Pharmacognosy"],
+["RP503T","Innovation and Startup Ecosystem"],
+["BP504T","Pharmaceutical Dosage Form II"],
+["BP505T","Pharmaceutical Quality Assurance"],
+["BP506T","Systemic Pharmacology II"]
+]
+},
+
+{
+title:"6th Semester",
+subjects:[
+["BP601T","Advanced Pharmacognosy"],
+["BP602T","Biopharmaceutics and Pharmacokinetics"],
+["BP603T","Intellectual Property Rights"],
+["BP604T","AI Applications in Pharmaceutical Sciences"],
+["BP605T","Pharmaceutical Analysis"],
+["BP606T","Pharmaceutical Jurisprudence"]
+]
+},
+
+{
+title:"7th Semester",
+subjects:[
+["BP701T","Biostatistics Research Methodology"],
+["BP702T","Cosmetics and Cosmeceuticals"],
+["BP703T","AI in Clinical Applications"],
+["BP704T","Modern Analytical Techniques"],
+["BP705T","Pharmacovigilance"],
+["BP706T","Pharmacy Practice"],
+["BP707T","Regulatory Affairs"]
+]
+},
+
+{
+title:"8th Semester",
+subjects:[
+["BP801T","Ethical Considerations and Translational Applications of AI in Pharmacy"],
+["BP802T","Clinical Pharmacotherapeutics"],
+["BP803T","Industrial Pharmacy and Facility Design"],
+["BP804T","Pharmaceutical Management"],
+["BP805T","Sterile Dosage Forms and Novel Drug Delivery System"]
+]
+}
+
+];
+
+
+/* =================================
+   D.PHARM ER-2020 SYLLABUS
+================================= */
+
+const dpharm = [
+
+{
+title:"1st Year",
+subjects:[
+["ER20-11T","Pharmaceutics – Theory"],
+["ER20-12T","Pharmaceutical Chemistry – Theory"],
+["ER20-13T","Pharmacognosy – Theory"],
+["ER20-14T","Human Anatomy & Physiology – Theory"],
+["ER20-15T","Social Pharmacy – Theory"]
+]
+},
+
+{
+title:"2nd Year",
+subjects:[
+["ER20-21T","Pharmacology – Theory"],
+["ER20-22T","Community Pharmacy & Management – Theory"],
+["ER20-23T","Biochemistry & Clinical Pathology – Theory"],
+["ER20-24T","Pharmacotherapeutics – Theory"],
+["ER20-25T","Hospital & Clinical Pharmacy – Theory"],
+["ER20-26T","Pharmacy Law & Ethics"]
+]
+}
+
+];
+
+
+/* =================================
    ADD YOUR RESOURCE LINKS HERE
-   For each subject:
-   study = one Blogger/PDF page containing
-           Study Material + Mock Test/PYQ.
-   video = separate YouTube/video link.
-   ========================================= */
+================================= */
+
+// Study Material and Mock Test use ONE LINK.
+// That link can open a Blogger page containing
+// both notes and MCQ/mock tests.
+//
+// Video has a separate link.
+//
+// Add links using the exact subject code.
+
 const resources = {
-  /* Example:
-  "RNTPC-GA": {
-    study: "https://your-blogger-link",
-    video: "https://youtube.com/your-video"
-  },
-  */
+
+"BP101T":{
+study:"https://pratik-pharmacy.blogspot.com/2026/11/basic-of-python-programming-for.html",
+video:"",
+},
+
+// B.Pharm other subjects
+// Add your links in the same format.
+
+"BP102T":{study:"",video:""},
+"BP103T":{study:"",video:""},
+"BP104T":{study:"",video:""},
+"BP105T":{study:"",video:""},
+"BP106T":{study:"",video:""},
+
+"RP201T":{study:"",video:""},
+"BP202T":{study:"",video:""},
+"BP203T":{study:"",video:""},
+"BP204T":{study:"",video:""},
+"BP205T":{study:"",video:""},
+"BP206T":{study:"",video:""},
+
+"BP301T":{study:"",video:""},
+"BP302T":{study:"",video:""},
+"BP303T":{study:"",video:""},
+"BP304T":{study:"",video:""},
+"BP305T":{study:"",video:""},
+"BP306T":{study:"",video:""},
+"BP307T":{study:"",video:""},
+"RP308T":{study:"",video:""},
+
+"BP401T":{study:"",video:""},
+"BP402T":{study:"",video:""},
+"BP403T":{study:"",video:""},
+"BP404T":{study:"",video:""},
+"BP405T":{study:"",video:""},
+
+"BP501T":{study:"",video:""},
+"BP502T":{study:"",video:""},
+"RP503T":{study:"",video:""},
+"BP504T":{study:"",video:""},
+"BP505T":{study:"",video:""},
+"BP506T":{study:"",video:""},
+
+"BP601T":{study:"",video:""},
+"BP602T":{study:"",video:""},
+"BP603T":{study:"",video:""},
+"BP604T":{study:"",video:""},
+"BP605T":{study:"",video:""},
+"BP606T":{study:"",video:""},
+
+"BP701T":{study:"",video:""},
+"BP702T":{study:"",video:""},
+"BP703T":{study:"",video:""},
+"BP704T":{study:"",video:""},
+"BP705T":{study:"",video:""},
+"BP706T":{study:"",video:""},
+"BP707T":{study:"",video:""},
+
+"BP801T":{study:"",video:""},
+"BP802T":{study:"",video:""},
+"BP803T":{study:"",video:""},
+"BP804T":{study:"",video:""},
+"BP805T":{study:"",video:""},
+
+// D.Pharm subjects
+
+"ER20-11T":{study:"",video:""},
+"ER20-12T":{study:"",video:""},
+"ER20-13T":{study:"",video:""},
+"ER20-14T":{study:"",video:""},
+"ER20-15T":{study:"",video:""},
+
+"ER20-21T":{study:"",video:""},
+"ER20-22T":{study:"",video:""},
+"ER20-23T":{study:"",video:""},
+"ER20-24T":{study:"",video:""},
+"ER20-25T":{study:"",video:""},
+"ER20-26T":{study:"",video:""}
+
 };
 
-/* Common subject links */
-const commonResources = {
-  "Indian History":"",
-  "Indian Geography":"",
-  "Indian Polity":"",
-  "Indian Economy":"",
-  "General Science":"",
-  "Mathematics":"",
-  "Reasoning":"",
-  "English":"",
-  "Hindi":"",
-  "Computer Knowledge":"",
-  "Static GK":"",
-  "Current Affairs":""
-};
+
+/* =================================
+   PASSWORD AND RESOURCE FUNCTION
+================================= */
 
 function openResource(code,name,type){
-  const item = resources[code];
-  const url = item ? item[type] : "";
-  if(!url || !url.trim()){
-    alert("इस Subject का Link अभी Update नहीं किया गया है।");
-    return;
-  }
-  const password = prompt(
-    name + "\n" + (type==="study"
-      ? "Study Material + Mock Test Password डालें:"
-      : "Video Lecture Password डालें:")
-  );
-  if(password===null) return;
-  if(password===PASSWORDS[type]){
-    window.open(url,"_blank","noopener,noreferrer");
-  }else{
-    alert("Wrong Password! कृपया सही Password डालें।");
-  }
+
+const data = resources[code];
+const url = data ? data[type] : "";
+
+if(!url || !url.trim()){
+alert("इस Subject का Link अभी Update नहीं किया गया है।");
+return;
 }
 
-function enquiryLink(code,name,examName){
-  const msg = "Hello PGS, I want information about:\n\nExam: "+examName+
-    "\nSubject: "+name+"\nSubject Code: "+code;
-  return "https://wa.me/"+whatsappNumber+"?text="+encodeURIComponent(msg);
+const password = prompt(
+name+"\n"+(type==="study" ?
+"Study Material + Mock Test Password डालें:" :
+"Video Lecture Password डालें:")
+);
+
+if(password===null)return;
+
+if(password===PASSWORDS[type]){
+window.open(url,"_blank","noopener,noreferrer");
+}else{
+alert("Wrong Password! कृपया सही Password डालें।");
 }
 
-function createExamSection(data,selectorId,containerId,prefix){
-  const selector=document.getElementById(selectorId);
-  const container=document.getElementById(containerId);
-
-  data.forEach((exam,index)=>{
-    const link=document.createElement("a");
-    link.className="selector";
-    link.href="#"+prefix+"-"+index;
-    link.textContent=exam.title;
-    const small=document.createElement("small");
-    small.textContent=exam.subjects.length+" Subjects";
-    link.appendChild(small);
-    selector.appendChild(link);
-
-    const block=document.createElement("div");
-    block.className="semester-block";
-    block.id=prefix+"-"+index;
-
-    const heading=document.createElement("h3");
-    heading.className="semester-title";
-    heading.textContent=exam.title+" – Subjects";
-    const grid=document.createElement("div");
-    grid.className="subject-grid";
-
-    exam.subjects.forEach(subject=>{
-      const code=subject[0], name=subject[1];
-      const card=document.createElement("div");
-      card.className="subject-card";
-
-      const subjectCode=document.createElement("div");
-      subjectCode.className="subject-code";
-      subjectCode.textContent="Subject Code: "+code;
-
-      const title=document.createElement("h3");
-      title.textContent=name;
-
-      const study=document.createElement("button");
-      study.className="resource-btn study";
-      study.textContent="Study Material + Mock Test 🔒";
-      study.onclick=()=>openResource(code,name,"study");
-
-      const video=document.createElement("button");
-      video.className="resource-btn video";
-      video.textContent="Video Lectures 🔒";
-      video.onclick=()=>openResource(code,name,"video");
-
-      const enquiry=document.createElement("a");
-      enquiry.className="enquiry";
-      enquiry.textContent="WhatsApp Enquiry";
-      enquiry.href=enquiryLink(code,name,exam.title);
-      enquiry.target="_blank";
-      enquiry.rel="noopener";
-
-      card.append(subjectCode,title,study,video,enquiry);
-      grid.appendChild(card);
-    });
-
-    block.append(heading,grid);
-    container.appendChild(block);
-  });
 }
 
-function createCommonSubjects(){
-  const selector=document.getElementById("commonSelector");
-  Object.entries(commonResources).forEach(([name,url])=>{
-    const a=document.createElement("a");
-    a.className="selector";
-    a.href="#";
-    a.textContent=name;
-    a.onclick=(event)=>{
-      event.preventDefault();
-      if(url && url.trim()){
-        window.open(url,"_blank","noopener,noreferrer");
-      }else{
-        alert(name+" का Link अभी Update नहीं किया गया है।");
-      }
-    };
-    selector.appendChild(a);
-  });
+
+/* =================================
+   WHATSAPP ENQUIRY
+================================= */
+
+function getEnquiry(code,name,course){
+
+const msg =
+"Hello PGS, I want information about:\n\n"+
+"Course: "+course+"\n"+
+"Subject: "+name+"\n"+
+"Subject Code: "+code;
+
+return "https://wa.me/"+whatsappNumber+
+"?text="+encodeURIComponent(msg);
+
 }
 
-createExamSection(exams.railway,"railwaySelector","railwaySubjects","railway");
-createExamSection(exams.ssc,"sscSelector","sscSubjects","ssc");
-createExamSection(exams.up,"upSelector","upSubjects","up");
-createExamSection(exams.pharmacy,"pharmacySelector","pharmacySubjects","pharmacy");
-createCommonSubjects();
+
+/* =================================
+   GENERATE COURSE SELECTORS
+================================= */
+
+function createSelector(data,selectorId,prefix){
+
+const selector=document.getElementById(selectorId);
+
+data.forEach((item,index)=>{
+
+const link=document.createElement("a");
+link.className="selector";
+link.href="#"+prefix+"-"+index;
+link.textContent=item.title;
+
+const small=document.createElement("small");
+small.textContent=item.subjects.length+" Subjects";
+
+link.appendChild(small);
+selector.appendChild(link);
+
+});
+
+}
+
+
+/* =================================
+   GENERATE SUBJECT CARDS
+================================= */
+
+function createSubjects(data,containerId,prefix,course){
+
+const container=document.getElementById(containerId);
+
+data.forEach((group,index)=>{
+
+const block=document.createElement("div");
+block.className="semester-block";
+block.id=prefix+"-"+index;
+
+const heading=document.createElement("h3");
+heading.className="semester-title";
+heading.textContent=group.title;
+
+const grid=document.createElement("div");
+grid.className="subject-grid";
+
+group.subjects.forEach(subject=>{
+
+const code=subject[0];
+const name=subject[1];
+
+const card=document.createElement("div");
+card.className="subject-card";
+
+const subjectCode=document.createElement("div");
+subjectCode.className="subject-code";
+subjectCode.textContent="Course Code: "+code;
+
+const title=document.createElement("h3");
+title.textContent=name;
+
+const study=document.createElement("button");
+study.className="resource-btn study";
+study.textContent="Study Material + Mock Test 🔒";
+study.onclick=()=>openResource(code,name,"study");
+
+const video=document.createElement("button");
+video.className="resource-btn video";
+video.textContent="Video Lectures 🔒";
+video.onclick=()=>openResource(code,name,"video");
+
+const enquiry=document.createElement("a");
+enquiry.className="enquiry";
+enquiry.textContent="WhatsApp Enquiry";
+enquiry.href=getEnquiry(code,name,course);
+enquiry.target="_blank";
+enquiry.rel="noopener";
+
+card.append(subjectCode,title,study,video,enquiry);
+grid.appendChild(card);
+
+});
+
+block.append(heading,grid);
+container.appendChild(block);
+
+});
+
+}
+
+
+/* =================================
+   START WEBSITE
+================================= */
+
+createSelector(bpharm,"bpharmSelector","bpharm");
+createSubjects(bpharm,"bpharmSubjects","bpharm","B.Pharm 2026");
+
+createSelector(dpharm,"dpharmSelector","dpharm");
+createSubjects(dpharm,"dpharmSubjects","dpharm","D.Pharm ER-2020");
+
 </script>
+
 </body>
 </html>
